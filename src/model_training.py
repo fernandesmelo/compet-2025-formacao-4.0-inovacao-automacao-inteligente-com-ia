@@ -1,8 +1,9 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.svm import SVC
+
+def train_models(X_train, y_train):
+    model_rf = RandomForestClassifier(n_estimators=200, random_state=42)
+    model_svc = SVC(kernel='linear', random_state=42)
+    model_rf.fit(X_train, y_train)
+    model_svc.fit(X_train, y_train)
+    return model_rf, model_svc
