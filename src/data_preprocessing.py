@@ -18,4 +18,5 @@ def load_and_preprocess_data(csv_path):
         df[col] = df[col].fillna(0).astype(int)
     X = df.drop("Is Delayed", axis=1)
     y = df["Is Delayed"]
+    print(df["Is Delayed"].value_counts())
     return X, y, df
