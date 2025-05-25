@@ -10,7 +10,6 @@ def load_and_preprocess_data(csv_path):
         "Delivery Efficiency (min/km)", "Is Delayed"
     ]
     df = df[cols]
-    df = df.dropna()
     le = LabelEncoder()
     for col in ["Pizza Size", "Pizza Type", "Traffic Level", "Payment Method"]:
         df[col] = le.fit_transform(df[col])
