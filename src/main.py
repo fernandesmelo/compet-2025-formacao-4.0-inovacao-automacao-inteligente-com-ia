@@ -10,8 +10,8 @@ from utils import grafico_barra, grafico_pizza, grafico_dispersao
 caminho_csv = "../data/Enhanced_pizza_sell_data_2024-25.csv"
 X, y, df = carregar_e_preprocessar_dados(caminho_csv)
 
-grafico_barra(df, "Pizza Size", "Distribuição dos tamanhos de pizza")
-grafico_pizza(df, "Traffic Level", "Nível de tráfego nos pedidos")
+grafico_barra(df, "Pizza Size", "Distribuição dos Tamanhos de Pizza")
+grafico_pizza(df, "Traffic Level", "Nível de Tráfego nos Pedidos")
 grafico_dispersao(df, "Distance (km)", "Delivery Efficiency (min/km)", "Distância vs Eficiência de Entrega")
 
 X_treino, X_teste, y_treino, y_teste = train_test_split(X, y, test_size=0.2, random_state=42)
