@@ -82,7 +82,7 @@ Siga os passos abaixo para clonar o repositório e iniciar o projeto localmente:
 
 #### 1. Clone o repositório
 ```bash
-git clone https://github.com/fernandesmelo/compet-2025-formacao-4.0-fundamentos-aplicacoes-data-science.git
+git clone https://github.com/fernandesmelo/compet-2025-formacao-4.0-inovacao-automacao-inteligente-com-ia.git
 ```
 #### 2. Acesse a pasta do projeto
 ```bash
