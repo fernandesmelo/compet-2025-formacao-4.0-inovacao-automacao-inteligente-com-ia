@@ -3,7 +3,7 @@ Este projeto é um exemplo de aprendizado de máquina para prever se uma entrega
 
 ### O que faz cada arquivo?
 **1. main.py**
-* **É o arquivo principal do projeto. Ele:**
+* _É o arquivo principal do projeto. Ele:_
 Carrega e prepara os dados dos pedidos de pizza.
 Gera gráficos para mostrar como são os dados.
 Divide os dados em duas partes: uma para treinar o computador e outra para testar se ele aprendeu bem.
@@ -12,7 +12,7 @@ Avalia qual modelo aprendeu melhor.
 Salva o melhor modelo em um arquivo para ser usado depois.
 
 **2. data_preprocessing.py**
-* **Cuida da preparação dos dados. Ele:**
+* _Cuida da preparação dos dados. Ele:_
 Lê o arquivo de dados (CSV).
 Seleciona apenas as colunas importantes.
 Converte informações de texto em números (porque o computador entende melhor assim).
@@ -20,19 +20,19 @@ Preenche valores que estão faltando.
 Separa os dados em "entradas" (o que sabemos sobre o pedido) e "saída" (se atrasou ou não).
 
 **3. model_training.py**
-* **É responsável por treinar os modelos. Ele:**
+* _É responsável por treinar os modelos. Ele:_
 Cria dois tipos de modelos de aprendizado de máquina (Random Forest e SVC).
 Ensina esses modelos usando os dados de treino.
 Devolve os modelos treinados para serem avaliados.
 
 **4. model_evaluation.py**
-* **Serve para avaliar os modelos. Ele:**
+* _Serve para avaliar os modelos. Ele:_
 Testa os modelos com dados que eles nunca viram antes.
 Mostra qual modelo acertou mais previsões (acurácia).
 Devolve as notas de cada modelo.
 
 **5. utils.py**
-* **Tem funções para gerar gráficos. Ele:**
+* _Tem funções para gerar gráficos. Ele:_
 Cria gráficos de barra, pizza e dispersão para ajudar a visualizar os dados e entender melhor o que está acontecendo.
 
 **6. preencher_is_delayed.py**
