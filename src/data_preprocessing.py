@@ -2,7 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 def load_and_preprocess_data(csv_path):
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv(csv_path, sep=',')
+    df.columns = df.columns.str.strip()
     cols = [
         "Pizza Size", "Pizza Type", "Toppings Count", "Distance (km)",
         "Traffic Level", "Payment Method", "Is Peak Hour", "Is Weekend",
