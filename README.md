@@ -36,10 +36,10 @@ Devolve as notas de cada modelo.
 Cria gráficos de barra, pizza e dispersão para ajudar a visualizar os dados e entender melhor o que está acontecendo.
 
 6. preencher_is_delayed.py
-É um script auxiliar para preencher a coluna "Is Delayed" no arquivo de dados, marcando se o pedido atrasou ou não, baseado no tempo de atraso.
+* É um script auxiliar para preencher a coluna "Is Delayed" no arquivo de dados, marcando se o pedido atrasou ou não, baseado no tempo de atraso.
 
 7. ver_colunas.py
-É um script simples para mostrar os nomes das colunas do arquivo de dados, ajudando na preparação do código.
+* É um script simples para mostrar os nomes das colunas do arquivo de dados, ajudando na preparação do código.
 
 8. model/
-É uma pasta onde o projeto salva o melhor modelo treinado para ser usado depois, sem precisar treinar tudo de novo.
+* É uma pasta onde o projeto salva o melhor modelo treinado para ser usado depois, sem precisar treinar tudo de novo.
