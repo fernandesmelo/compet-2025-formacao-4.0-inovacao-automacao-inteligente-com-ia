@@ -1,8 +1,8 @@
 from sklearn.metrics import accuracy_score
 
-def evaluate_models(model_rf, model_svc, X_test, y_test):
-    y_pred_rf = model_rf.predict(X_test)
-    y_pred_svc = model_svc.predict(X_test)
-    acc_rf = accuracy_score(y_test, y_pred_rf)
-    acc_svc = accuracy_score(y_test, y_pred_svc)
+def avaliar_modelos(modelo_rf, modelo_svc, X_teste, y_teste):
+    acc_rf = modelo_rf.score(X_teste, y_teste)
+    acc_svc = modelo_svc.score(X_teste, y_teste)
+    print(f"Acurácia RandomForest: {acc_rf*100:.2f}%")
+    print(f"Acurácia SVC: {acc_svc*100:.2f}%")
     return acc_rf, acc_svc
