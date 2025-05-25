@@ -2,27 +2,25 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import pickle
 
-from data_preprocessing import load_and_preprocess_data
-from model_training import train_models
-from model_evaluation import evaluate_models
-from utils import plot_bar, plot_pie, plot_scatter
+from data_preprocessing import carregar_e_preprocessar_dados
+from model_training import treinar_modelos
+from model_evaluation import avaliar_modelos
+from utils import grafico_barra, grafico_pizza, grafico_dispersao
 
-csv_path = "../data/Enhanced_pizza_sell_data_2024-25.csv"
-X, y, df = load_and_preprocess_data(csv_path)
+caminho_csv = "../data/Enhanced_pizza_sell_data_2024-25.csv"
+X, y, df = carregar_e_preprocessar_dados(caminho_csv)
 
-plot_bar(df, "Pizza Size", "Distribuição dos tamanhos de pizza")
-plot_pie(df, "Traffic Level", "Nível de tráfego nos pedidos")
-plot_scatter(df, "Distance (km)", "Delivery Efficiency (min/km)", "Distância vs Eficiência de Entrega")
+grafico_barra(df, "Pizza Size", "Distribuição dos tamanhos de pizza")
+grafico_pizza(df, "Traffic Level", "Nível de tráfego nos pedidos")
+grafico_dispersao(df, "Distance (km)", "Delivery Efficiency (min/km)", "Distância vs Eficiência de Entrega")
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_treino, X_teste, y_treino, y_teste = train_test_split(X, y, test_size=0.2, random_state=42)
 
-model_rf, model_svc = train_models(X_train, y_train)
+modelo_rf, modelo_svc = treinar_modelos(X_treino, y_treino)
 
-acc_rf, acc_svc = evaluate_models(model_rf, model_svc, X_test, y_test)
-print(f"Acurácia RandomForest: {acc_rf*100:.2f}%")
-print(f"Acurácia SVC: {acc_svc*100:.2f}%")
+acc_rf, acc_svc = avaliar_modelos(modelo_rf, modelo_svc, X_teste, y_teste)
 
-best_model = model_rf if acc_rf > acc_svc else model_svc
 with open("../model/best_model.pkl", "wb") as f:
-    pickle.dump(best_model, f)
+    pickle.dump(modelo_rf if acc_rf > acc_svc else modelo_svc, f)
+
 print("Modelo salvo com sucesso!")
