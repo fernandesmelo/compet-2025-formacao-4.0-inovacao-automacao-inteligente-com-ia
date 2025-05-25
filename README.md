@@ -1,7 +1,7 @@
 # Previsão de Atraso em Entregas de Pizza com Aprendizado de Máquina
 Este projeto é um exemplo de aprendizado de máquina para prever se uma entrega de pizza vai atrasar ou não, [usando um conjunto de dados de vendas de pizza realista e estruturado que abrange o período de 2024 a 2025.](https://www.kaggle.com/datasets/akshaygaikwad448/pizza-delivery-data-with-enhanced-features) Ele lê uma tabela com informações de pedidos de pizza (como tamanho, tipo, distância, horário, etc.), analisa esses dados, treina dois modelos de computador para "aprender" padrões, e depois salva o melhor modelo para uso futuro.
 
-### O que faz cada arquivo?
+### 📂 O que faz cada arquivo?
 **1. main.py**
 * _É o arquivo principal do projeto. Ele:_
 Carrega e prepara os dados dos pedidos de pizza.
