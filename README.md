@@ -71,7 +71,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 - [Git](https://git-scm.com)
 - [Python 3.8+](https://www.python.org/downloads/)
 - [Pip](https://pip.pypa.io/en/stable/installation/)
-- [Jupyter Notebook](https://jupyter.org/install) (opcional, mas recomendado para rodar o notebook)
 
 Além disso, é bom ter um editor como o [VSCode](https://code.visualstudio.com/) para trabalhar com o código.
 
