@@ -110,5 +110,11 @@ Após criar o ambiente virtual, o VS Code solicitará que você associe um arqui
 6. **Confirme e aguarde** <br>
 Clique em OK e aguarde enquanto o ambiente virtual é configurado e as dependências listadas no requirements.txt são instaladas automaticamente.
 
+7. **Execute o projeto** <br>
+Para rodar o projeto, abra o terminal no VS Code e digite:
+```bash
+python main.py
+```
+
 9. **Pronto!** <br>
 Após a configuração, o ambiente virtual estará pronto para uso, e você poderá executar o notebook sem problemas.
