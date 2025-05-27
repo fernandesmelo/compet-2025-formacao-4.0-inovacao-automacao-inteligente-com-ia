@@ -115,6 +115,5 @@ Para rodar o projeto, abra o terminal no VS Code e digite:
 ```bash
 python main.py
 ```
-
-9. **Pronto!** <br>
+8. **Pronto!** <br>
 Após a configuração, o ambiente virtual estará pronto para uso, e você poderá executar o notebook sem problemas.
